@@ -1,0 +1,83 @@
+/* ===== МРАЧНАЯ ТЕМА =====
+   HTML-файлы не менялись: весь вид задаётся здесь.
+   Хочешь другой цвет — правь переменные в :root. */
+
+/* Шрифты из Google Fonts (нужен интернет). Если не загрузятся — сработают запасные */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Special+Elite&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap");
+
+:root{
+  --bg:#050505;          /* почти чёрный фон */
+  --fg:#cfcac2;          /* грязно-белый текст, как старая бумага */
+  --mut:#7d776e;         /* приглушённый серый */
+  --blood:#8a0b0b;       /* тёмно-красный акцент */
+  --blood-hi:#c01818;    /* красный поярче */
+  --line:#3a3532;        /* цвет рамок */
+}
+*{box-sizing:border-box;margin:0}
+
+/* Фон: чёрный + виньетка (затемнение по краям) + «зерно» из полос */
+body{
+  color:var(--fg);
+  font:400 17px/1.75 "Cormorant Garamond",Georgia,serif;
+  background:
+    radial-gradient(ellipse at 50% 0%,rgba(138,11,11,.22),transparent 55%),
+    radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.85) 100%),
+    repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 3px),
+    var(--bg);
+  background-attachment:fixed;
+  min-height:100vh;
+}
+a{color:inherit}
+::selection{background:var(--blood);color:#fff}
+
+/* Навигация */
+nav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;padding:16px;border-bottom:1px solid var(--line)}
+.pill{border:1px solid var(--blood);border-radius:2px;padding:6px 16px;text-decoration:none;font:500 13px Oswald,sans-serif;letter-spacing:.2em;text-transform:uppercase;display:inline-block}
+.logo{background:var(--blood);color:#fff}
+.menu{display:flex;flex-wrap:wrap;gap:2px}
+.menu a{padding:6px 12px;text-decoration:none;font:300 12px Oswald,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);border-bottom:1px solid transparent}
+.menu a[aria-current]{color:#fff;border-bottom-color:var(--blood-hi)} /* активная страница */
+
+/* Заголовки: узкий шрифт, красная тень = «кровавый» след */
+h1,h2,h3{font-family:Oswald,sans-serif;font-weight:500;text-transform:uppercase;line-height:1.02}
+h1{font-size:clamp(42px,12vw,140px);letter-spacing:.02em;padding:36px 16px 0;color:#e6e1d8;text-shadow:0 0 28px rgba(192,24,24,.45),3px 3px 0 var(--blood)}
+h2{font-size:clamp(24px,5vw,48px);letter-spacing:.08em;padding:48px 16px 10px;color:#d9d3c9}
+h2::after{content:"";display:block;width:64px;height:3px;background:var(--blood);margin-top:10px} /* красная черта под заголовком */
+h3{font-size:20px;letter-spacing:.06em;margin-bottom:8px}
+.num{display:block;padding:0 16px;margin-top:28px;font:300 16px Oswald,sans-serif;letter-spacing:.3em;color:var(--blood-hi)}
+
+/* Текст: на странице как «машинописное дело» */
+.text{max-width:760px;padding:8px 16px}
+.text p{margin-bottom:16px;font-size:19px}
+.text b{font:400 14px "Special Elite",monospace;color:var(--blood-hi);letter-spacing:.08em;text-transform:uppercase}
+.note{max-width:760px;padding:8px 16px;color:var(--mut);font:400 13px/1.6 "Special Elite",monospace}
+blockquote{border-left:3px solid var(--blood);margin:18px 0;padding:6px 18px;color:#a9a39a;font-style:italic;background:rgba(138,11,11,.07)}
+
+/* Карточки */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;padding:16px}
+.card{border:1px solid var(--line);border-top:2px solid var(--blood);padding:18px;font-size:17px;background:rgba(10,8,8,.8);box-shadow:inset 0 0 40px rgba(0,0,0,.7)}
+.card b{display:block;font:300 12px Oswald,sans-serif;letter-spacing:.22em;color:var(--blood-hi);margin-bottom:10px;text-transform:uppercase}
+.card.light{background:var(--blood);color:#fff}
+
+/* Фото: в цвете, с красной тенью */
+.photo{border:1px dashed var(--line);min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font:400 12px "Special Elite",monospace;padding:10px;overflow:hidden;background:#0a0a0a}
+.photo img{width:100%;height:auto;display:block;box-shadow:0 0 30px rgba(138,11,11,.35)}
+.photo figcaption{font-size:12px;color:var(--mut);padding:6px 0}
+
+/* Таблица */
+.wrap{overflow-x:auto;padding:0 16px}
+table{border-collapse:collapse;width:100%;min-width:480px;font-size:16px}
+td,th{border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top;font-weight:400}
+th{font:300 12px Oswald,sans-serif;letter-spacing:.2em;color:var(--blood-hi);text-transform:uppercase}
+td:first-child{white-space:nowrap;font-family:"Special Elite",monospace;font-size:13px;color:var(--mut)}
+
+.band{border:1px solid var(--line);margin:24px 8px;padding-bottom:16px}
+footer{padding:40px 16px;font:400 11px/1.7 "Special Elite",monospace;color:var(--mut);border-top:1px solid var(--line);margin-top:40px}
+
+/* Страница памяти: без красного, тихо и светло — о людях, не о преступниках */
+body.memory{background:#0b0b0c;color:#e8e6e1}
+.memory h1{text-shadow:none;color:#f1efea}
+.memory h2::after{background:#8c8a85}
+.memory .num,.memory .card b{color:#9d9a94}
+.memory .card{border-top-color:#8c8a85}
+.memory nav{border-bottom-color:#2a2a2a}
