@@ -16,7 +16,7 @@
 
                                             Возрастное ограничение 18+.
 
-Актуальная ссылка на сайт: https://kaavillxraavaa.github.io/Irkutsk-hammers-akademovsky-maniacs.-Immersion-in-russian-true-crime/  (дата последнего обновления 17.11.2026 (2:47 по мск)).
+Актуальная ссылка на сайт: https://kaavillxraavaa.github.io/Irkutsk-hammers-akademovsky-maniacs.-Immersion-in-russian-true-crime/    (дата последнего обновления 17.11.2026 (2:47 по мск)).
 
 
                                             Приятного ознакомления.
