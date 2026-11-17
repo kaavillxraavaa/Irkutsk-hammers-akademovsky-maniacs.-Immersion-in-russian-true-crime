@@ -51,7 +51,8 @@ blockquote{border-left:3px solid var(--blood);margin:18px 0;padding:6px 18px;col
 .card.light{background:var(--blood);color:#fff}
 
 .photo{border:1px dashed var(--line);min-height:180px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font:400 12px "Special Elite",monospace;padding:10px;overflow:hidden;background:#0a0a0a}
-.photo img{width:100%;height:auto;display:block;box-shadow:0 0 30px rgba(138,11,11,.35)}
+.photo img{max-width:450px;width:100%;height:auto;display:block;margin:0 auto;box-shadow:0 0 30px rgba(138,11,11,.35)}
+.photo.wide img{max-width:none;}
 .photo figcaption{font-size:12px;color:var(--mut);padding:6px 0}
 
 .wrap{overflow-x:auto;padding:0 16px}
