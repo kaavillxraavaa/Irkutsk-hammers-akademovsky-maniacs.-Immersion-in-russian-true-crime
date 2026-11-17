@@ -16,13 +16,14 @@
 
     Возрастное ограничение 18+.
 
-Актуальная ссылка на сайт: https://kaavillxraavaa.github.io/Irkutsk-hammers-akademovsky-maniacs.-Immersion-in-russian-true-crime/    (дата последнего обновления 17.11.2026 (2:47 по мск)).
+Актуальная ссылка на сайт: [клик](https://kaavillxraavaa.github.io/Irkutsk-hammers-akademovsky-maniacs.-Immersion-in-russian-true-crime/) (дата последнего обновления 17.11.2026 (17:47 по мск)).
 
+При неоткрытии ссылки в телеграм-канал на самом сайте - [tg](https://t.me/irkutsk_breakingup) **!СТРОГО 18+!**
 
 **Приятного ознакомления.**
 
 # 
 
-видео материал (блюр/без **!СТРОГО 19+!**) с Алевтиной и обратная связь - tg: @kaavillxraavaa 
+ обратная связь - tg: @kaavillxraavaa 
 
 <img width="210" height="220" alt="image" src="https://github.com/user-attachments/assets/872d704f-566b-44a2-9316-1c198d9eba3a" />
